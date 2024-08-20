@@ -5,18 +5,61 @@ body {
 .background-container {
     background: url('../images/IMG_1125.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 100vh; /* Ustawia wysokość kontenera na wysokość widoku */
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
+/* Stylizacja dla navbaru */
+.navbar {
+    background: transparent; /* Przezroczyste tło */
+    border-bottom: 3px solid white; /* Cienka linia pozioma na dole */
+    width: 100%; /* Pełna szerokość */
+    height: 8%; /* Wysokość navbaru */
+    display: flex; /* Umożliwia elastyczne rozmieszczanie elementów */
+    align-items: center; /* Wyrównanie w pionie */
+    padding: 0 20px; /* Padding wewnętrzny, aby dodać trochę przestrzeni po bokach */
+    justify-content: flex-end; /* Wyrównanie elementów na prawo */
+}
+
+/* Stylizacja dla linków w navbarze */
+.nav-links {
+    margin-right: 20%;
+    list-style: none; /* Usunięcie punktów listy */
+    padding: 0; /* Usunięcie paddingu */
+    display: flex; /* Umożliwia rozmieszczanie elementów w poziomie */
+}
+
+/* Stylizacja dla elementów listy w navbarze */
+.nav-links li {
+    margin-right: 20px; /* Margines po prawej stronie każdego linku */
+    margin-left: 30px;
+}
+
+/* Stylizacja dla linków */
+.nav-links a {
+    text-decoration: none; /* Usunięcie podkreślenia */
+    color: white; /* Kolor tekstu */
+    font-size: 22px; /* Rozmiar czcionki */
+    transition: color 0.3s; /* Płynna zmiana koloru po najechaniu */
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Kolor tekstu linków po najechaniu */
+}
+
+
 .text-content {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 2%;
+    /*transform: translateY(-50%);*/
     text-align: center;
+    color: white;
 }
 
 #names {
-    font-size: 100px;
+    font-size: 90px;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -25,5 +68,6 @@ body {
 }
 
 #date {
+    margin-top: 5px;
     font-size: 40px;
 }
