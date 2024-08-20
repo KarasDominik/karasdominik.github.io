@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.background-container {
+    background: url('../images/IMG_1125.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Ustawia wysokość kontenera na wysokość widoku */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content {
+    text-align: center;
+}
+
+#names {
+    font-size: 100px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+#date {
+    font-size: 40px;
+}
