@@ -12,7 +12,7 @@ body {
 /* Stylizacja dla navbaru */
 .navbar {
     background: transparent; /* Przezroczyste tło */
-    border-bottom: 3px solid white; /* Cienka linia pozioma na dole */
+    border-bottom: 3px solid black; /* Cienka linia pozioma na dole */
     width: 100%; /* Pełna szerokość */
     height: 8%; /* Wysokość navbaru */
     display: flex; /* Umożliwia elastyczne rozmieszczanie elementów */
@@ -31,29 +31,31 @@ body {
 
 /* Stylizacja dla elementów listy w navbarze */
 .nav-links li {
-    margin-right: 20px; /* Margines po prawej stronie każdego linku */
+    margin-right: 10px; /* Margines po prawej stronie każdego linku */
     margin-left: 30px;
+    font-family: "Mate", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Stylizacja dla linków */
 .nav-links a {
     text-decoration: none; /* Usunięcie podkreślenia */
-    color: white; /* Kolor tekstu */
-    font-size: 22px; /* Rozmiar czcionki */
+    color: black; /* Kolor tekstu */
+    font-size: 16px; /* Rozmiar czcionki */
     transition: color 0.3s; /* Płynna zmiana koloru po najechaniu */
+    font-weight: bold;
 }
 
 .nav-links a:hover {
     color: #007bff; /* Kolor tekstu linków po najechaniu */
 }
 
-
 .text-content {
     width: 100%;
     margin: 0;
     position: absolute;
-    top: 2%;
-    /*transform: translateY(-50%);*/
+    top: 3%;
     text-align: center;
     color: white;
 }
@@ -65,9 +67,11 @@ body {
     font-weight: 700;
     font-style: normal;
     margin-bottom: 0;
+    color: black;
 }
 
 #date {
     margin-top: 5px;
-    font-size: 40px;
+    font-size: 32px;
+    color: black;
 }
