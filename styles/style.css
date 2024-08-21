@@ -11,10 +11,11 @@ body {
 
 /* Stylizacja dla navbaru */
 .navbar {
-    background: transparent; /* Przezroczyste tło */
-    border-bottom: 3px solid black; /* Cienka linia pozioma na dole */
-    width: 100%; /* Pełna szerokość */
-    height: 8%; /* Wysokość navbaru */
+    background: transparent;
+    border-bottom: 3px solid black;
+    width: 100%;
+    height: 8%;
+    box-sizing: border-box;
     display: flex; /* Umożliwia elastyczne rozmieszczanie elementów */
     align-items: center; /* Wyrównanie w pionie */
     padding: 0 20px; /* Padding wewnętrzny, aby dodać trochę przestrzeni po bokach */
