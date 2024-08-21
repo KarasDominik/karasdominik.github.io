@@ -6,7 +6,7 @@ body {
     background: url('../images/IMG_1125.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
-    display: flex;
+    width: 100vw;
 }
 
 /* Stylizacja dla navbaru */
