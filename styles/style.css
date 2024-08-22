@@ -82,28 +82,6 @@ body {
     color: black;
 }
 
-/* Stylizacja dla hamburger menu */
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: auto;
-}
-
-.hamburger-menu .line {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 3px 0;
-}
-
-/* Ukrycie menu na urządzeniach mobilnych */
-.nav-links {
-    display: flex; /* Domyślnie wyświetlaj menu w poziomie na większych ekranach */
-    transition: all 0.3s ease;
-    width: fit-content;
-}
-
 @media only screen and (max-width: 600px) {
 
     .text-content {
@@ -118,32 +96,47 @@ body {
         font-size: 24px;
     }
 
-    .navbar {
-        border-bottom: 0;
-    }
-
     .hamburger-menu {
         display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-left: auto;
+        margin-right: 5vw;
+        z-index: 2000;
+    }
+
+    .hamburger-menu .line {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 3px 0;
+    }
+
+    .navbar {
+        padding: 0;
     }
 
     .nav-links {
-        position: absolute;
-        top: 8%;
-        right: 0;
-        height: 0;
-        overflow: hidden;
-        flex-direction: column; /* Ustawienie linków w kolumnie */
-        background-color: rgba(255, 255, 255, 0.9);
-        width: fit-content;
-        text-align: right;
-        padding-right: 20px;
+        display: none;
+        flex-direction: column;
+        background: grey;
+        width: 100%;
+        margin: 70px 0 0 0;
     }
 
     .nav-links.open {
-        height: 10vh;
-        padding-top: 10px;
+        display: flex;
     }
 
     .nav-links li {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+        border-bottom: 2px black solid;
+        z-index: 1100;
+    }
+
+    .nav-links li a {
+        margin-left: 15px;
     }
 }
