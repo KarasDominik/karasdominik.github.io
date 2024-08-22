@@ -9,7 +9,6 @@ body {
     width: 100vw;
 }
 
-/* Stylizacja dla navbaru */
 .navbar {
     background: transparent;
     border-bottom: 3px solid black;
@@ -77,6 +76,28 @@ body {
     color: black;
 }
 
+/* Stylizacja dla hamburger menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+/* Ukrycie menu na urządzeniach mobilnych */
+.nav-links {
+    display: flex; /* Domyślnie wyświetlaj menu w poziomie na większych ekranach */
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
 @media only screen and (max-width: 600px) {
 
     .text-content {
@@ -89,5 +110,34 @@ body {
 
     #date {
         font-size: 24px;
+    }
+
+    .navbar {
+        border-bottom: 0;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 8%;
+        right: 0;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column; /* Ustawienie linków w kolumnie */
+        background-color: rgba(255, 255, 255, 0.9);
+        width: fit-content;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .nav-links.open {
+        height: 10vh;
+        padding-top: 10px;
+    }
+
+    .nav-links li {
     }
 }
