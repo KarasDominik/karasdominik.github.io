@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -19,6 +23,8 @@ body {
     align-items: center; /* Wyrównanie w pionie */
     padding: 0 20px; /* Padding wewnętrzny, aby dodać trochę przestrzeni po bokach */
     justify-content: flex-end; /* Wyrównanie elementów na prawo */
+    position: relative;
+    z-index: 1000;
 }
 
 /* Stylizacja dla linków w navbarze */
