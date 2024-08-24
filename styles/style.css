@@ -13,6 +13,10 @@ body {
     width: 100vw;
 }
 
+.dropdown {
+    display: none;
+}
+
 .navbar {
     background: transparent;
     border-bottom: 3px solid black;
@@ -116,27 +120,38 @@ body {
         padding: 0;
     }
 
-    .nav-links {
+    .navbar .nav-links {
         display: none;
-        flex-direction: column;
-        background: grey;
-        width: 100%;
-        margin: 70px 0 0 0;
     }
 
-    .nav-links.open {
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .dropdown .nav-links {
+        background: grey;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 0 auto;
+    }
+
+    .dropdown.open {
         display: flex;
     }
 
     .nav-links li {
         margin-top: 10px;
         margin-left: 0;
-        width: 100%;
         border-bottom: 2px black solid;
-        z-index: 1100;
+        padding-top: 5px;
+        padding-left: 15px;
     }
 
-    .nav-links li a {
-        margin-left: 15px;
+    .cross-sign {
+        color: white;
+        font-size: 20pt;
     }
 }

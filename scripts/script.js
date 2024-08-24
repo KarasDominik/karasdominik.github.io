@@ -1,8 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger-menu');
-    const navLinks = document.querySelector('.nav-links');
+    const dropdown = document.querySelector('.dropdown');
+    const crossSign = document.querySelector('.cross-sign');
 
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
+        dropdown.classList.toggle('open');
     });
+
+    crossSign.addEventListener('click', () => {
+        console.log('hello');
+        dropdown.hidden = true;
+    })
 });
