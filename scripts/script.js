@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     crossSign.addEventListener('click', () => {
-        console.log('hello');
-        dropdown.hidden = true;
-    })
+        dropdown.classList.toggle('open');
+    });
 });

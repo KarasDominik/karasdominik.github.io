@@ -126,13 +126,14 @@ body {
 
     .dropdown {
         display: none;
+        background: grey;
         position: absolute;
         top: 0;
         width: 100%;
+        z-index: 1000;
     }
 
     .dropdown .nav-links {
-        background: grey;
         flex-direction: column;
         width: 100%;
         margin: 0 0 0 auto;
@@ -145,6 +146,7 @@ body {
     .nav-links li {
         margin-top: 10px;
         margin-left: 0;
+        margin-right: 0;
         border-bottom: 2px black solid;
         padding-top: 5px;
         padding-left: 15px;
@@ -153,5 +155,8 @@ body {
     .cross-sign {
         color: white;
         font-size: 20pt;
+        position: absolute;
+        right: 6px;
+        top: 6px;
     }
 }
