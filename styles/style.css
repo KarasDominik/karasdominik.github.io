@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+section {
+    text-align: center;
+}
+
 .background-container {
     background: url('../images/IMG_1125.jpg') no-repeat center center;
     background-size: cover;
@@ -84,6 +88,31 @@ body {
     margin-top: 5px;
     font-size: 32px;
     color: black;
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.description {
+    width: 30%;
+    line-height: 1.5;
+    margin: 2% auto;
+    font-style: italic;
+}
+
+.map {
+    display: block;
+    width: 100%;
+    margin: 2% auto;
+    border: none;
 }
 
 @media only screen and (max-width: 600px) {
