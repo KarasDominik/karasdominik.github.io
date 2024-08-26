@@ -105,7 +105,7 @@ section {
     width: 30%;
     line-height: 1.5;
     margin: 2% auto;
-    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .map {
@@ -177,21 +177,27 @@ img {
         display: flex;
     }
 
-    .nav-links li {
-        margin-top: 10px;
+    .nav-links li{
         margin-left: 0;
         margin-right: 0;
-        border-bottom: 2px black solid;
-        padding-top: 5px;
+        padding-top: 15px;
         padding-left: 15px;
+    }
+
+    .nav-links li.section {
+        border-bottom: 2px black solid;
+    }
+
+    .nav-links li.exit-sign {
+        padding: 0;
+        margin-left: auto;
+        margin-right: 15px;
+        height: 30px;
     }
 
     .cross-sign {
         color: white;
-        font-size: 20pt;
-        position: absolute;
-        right: 12px;
-        top: 6px;
+        font-size: 30pt;
     }
 
     .description {
