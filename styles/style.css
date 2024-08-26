@@ -193,4 +193,9 @@ img {
         right: 12px;
         top: 6px;
     }
+
+    .description {
+        font-size: 10px;
+        width: 50%;
+    }
 }
