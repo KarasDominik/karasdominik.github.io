@@ -120,6 +120,12 @@ img {
     height: auto;
 }
 
+.playlist {
+    width: 60%;
+    height: 352px;
+    border-radius: 12px;
+}
+
 @media only screen and (max-width: 600px) {
 
     .text-content {
