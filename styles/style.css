@@ -207,7 +207,13 @@ img {
     }
 
     .description {
-        font-size: 10px;
-        width: 50%;
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .playlist {
+        width: 100%;
+        height: 75vh;
+        border-radius: 12px;
     }
 }
