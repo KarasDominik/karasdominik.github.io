@@ -101,10 +101,41 @@ section {
     color: black;
 }
 
+.sub-header {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 0;
+    color: black;
+}
+
+.main-info {
+    width: 25%;
+    margin: 2% auto;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.info-field {
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 25px !important;
+}
+
+.info-content {
+    margin-left: 2%;
+}
+
 .description {
     width: 30%;
     line-height: 1.5;
-    margin: 2% auto;
+    margin: 1% auto;
     font-family: 'Times New Roman', Times, serif;
 }
 
