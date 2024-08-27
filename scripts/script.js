@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dropdown = document.querySelector('.dropdown');
     const crossSign = document.querySelector('.cross-sign');
     const navLinks = document.querySelectorAll('.dropdown .nav-links li');
+    const scrollButton = document.querySelector(".bi-chevron-up");
 
     hamburger.addEventListener('click', () => {
         dropdown.classList.toggle('open');
@@ -19,4 +20,20 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 500);
         });
     });
+
+    scrollButton.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    })
 });
+
+window.onscroll = function() {
+    const scrollButton = document.querySelector(".bi-chevron-up");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollButton.style.display = "block";
+    } else {
+        scrollButton.style.display = "none";
+    }
+};
