@@ -120,9 +120,17 @@ section {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.main-info {
+    width: 30%;
+}
+
 .info-field {
     display: flex;
     align-items: center;
+}
+
+.info-field.wedding {
+    justify-content: center;
 }
 
 .info-field img {
@@ -283,6 +291,6 @@ img {
     }
 
     .info-field {
-        margin-left: 30px;
+        margin: 0 auto;
     }
 }
