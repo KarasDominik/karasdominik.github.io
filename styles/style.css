@@ -114,7 +114,7 @@ section {
 
 .main-info {
     width: 15%;
-    margin: 2% auto;
+    margin: 0 auto;
     font-size: 19px;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
@@ -122,7 +122,6 @@ section {
 
 .main-info {
     width: 15%;
-    margin-bottom: 20px;
 }
 
 .info-field {
@@ -163,14 +162,14 @@ section {
 .description {
     width: 30%;
     line-height: 1.5;
-    margin: 1% auto;
+    margin: 0 auto;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .map {
     display: block;
     width: 60%;
-    margin: 2% auto;
+    margin: 1% auto;
     border: none;
 }
 
