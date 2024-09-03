@@ -184,6 +184,91 @@ img {
     border-radius: 12px;
 }
 
+form {
+    width: 30%;
+    margin: 20px auto;
+    font-family: Heebo, serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 5%;
+    height: 35px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+select {
+    display: block;
+    margin-bottom: 5%;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 5%;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.obligatory-field::after {
+    content: '  *';
+    color: #e81111;
+    font-size: 13px;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.select-container::after {
+    content: '▼';
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
 .bi-chevron-up {
     position: fixed;
     bottom: 20px;
@@ -197,12 +282,12 @@ img {
 }
 
 footer {
-    background-color: #333; /* Kolor tła stopki */
-    color: #fff; /* Kolor tekstu */
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 5px 0;
-    width: 100%; /* Szerokość stopki */
-    bottom: 0; /* Pozycjonuje stopkę na dole strony */
+    width: 100%;
+    bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -306,5 +391,9 @@ footer {
 
     .map {
         width: 100%;
+    }
+
+    form {
+        width: 90%;
     }
 }
