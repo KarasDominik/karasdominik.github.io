@@ -196,6 +196,15 @@ img {
     cursor: pointer;
 }
 
+footer {
+    background-color: #333; /* Kolor tła stopki */
+    color: #fff; /* Kolor tekstu */
+    text-align: center;
+    padding: 5px 0;
+    width: 100%; /* Szerokość stopki */
+    bottom: 0; /* Pozycjonuje stopkę na dole strony */
+}
+
 @media only screen and (max-width: 600px) {
 
     .text-content {
