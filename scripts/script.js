@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const dropdown = document.querySelector('.dropdown');
     const crossSign = document.querySelector('.cross-sign');
     const navLinks = document.querySelectorAll('.dropdown .nav-links li');
-    const scrollButton = document.querySelector(".bi-chevron-up");
+    const scrollButton = document.querySelector('.bi-chevron-up');
+    const rsvpForm = document.querySelector('form');
 
     hamburger.addEventListener('click', () => {
         dropdown.classList.toggle('open');
@@ -27,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
             behavior: 'smooth'
         });
     })
+
+    rsvpForm.reset();
 });
 
 window.onscroll = function() {
