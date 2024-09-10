@@ -40,3 +40,15 @@ window.onscroll = function() {
         scrollButton.style.display = "none";
     }
 };
+
+document.querySelector('.select-box').addEventListener('click', function() {
+    this.parentElement.classList.toggle('active');
+});
+
+// Zamykanie menu po kliknięciu poza nim
+document.addEventListener('click', function(e) {
+    const container = document.querySelector('.custom-select-container');
+    if (!container.contains(e.target)) {
+        container.classList.remove('active');
+    }
+});

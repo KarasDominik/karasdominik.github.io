@@ -109,28 +109,32 @@
 <section id="rsvp">
     <p class="header">RSVP</p>
     <div class="description">
-        Bardzo nam miło będzie gościć Was w tak ważnym dla nas dniu! W tej sekcji macie możliwość potwierdzenia obecności na weselu a także przekazania nam pewnych informacji, na przykład odnośnie preferowanego rodzaju alkoholu. Nie zapomnijcie także o zaproponowaniu wybranego utworu do naszej playlisty!
+        Bardzo nam miło będzie gościć Was w tak ważnym dla nas dniu! W tej sekcji macie możliwość potwierdzenia obecności na weselu, a także przekazania nam informacji dotyczących preferowanego rodzaju alkoholu czy specjalnych wymagań żywieniowych. Nie zapomnijcie także o zaproponowaniu wybranego utworu do naszej playlisty!
     </div>
     <div>
         <form action="#" method="post">
             <label for="imiona" class="obligatory-field">Imiona i nazwiska</label>
             <input type="text" id="imiona" name="imiona" required>
 
-            <label for="alkohol">Preferowany rodzaj alkoholu</label>
-            <div class="select-container">
-                <select id="alkohol" name="alkohol">
-                    <option value="wodka">Wódka</option>
-                    <option value="whisky">Whisky</option>
-                    <option value="wino">Wino</option>
-                    <option value="piwo">Piwo</option>
-                    <option value="gin">Gin</option>
-                    <option value="inny">Inny</option>
-                    <option value="nie-pije">Nie piję</option>
-                </select>
+            <label>Preferowany rodzaj alkoholu</label>
+            <div class="custom-select-container">
+                <div class="select-box">Wybierz opcje</div>
+                <div class="select-options">
+                    <label class="option"><input type="checkbox" value="wodka"><p>Wódka</p></label>
+                    <label class="option"><input type="checkbox" value="whisky"><p>Whisky</p></label>
+                    <label class="option"><input type="checkbox" value="wino"><p>Wino</p></label>
+                    <label class="option"><input type="checkbox" value="piwo"><p>Piwo</p></label>
+                    <label class="option"><input type="checkbox" value="gin"><p>Gin</p></label>
+                    <label class="option"><input type="checkbox" value="inny"><p>Inny</p></label>
+                    <label class="option"><input type="checkbox" value="nie-pije"><p>Nie piję</p></label>
+                </div>
             </div>
 
             <label for="piosenka">Piosenka</label>
             <input type="text" id="piosenka" name="piosenka">
+
+            <label for="dietary-requirements">Specjalne wymagania dietetyczne</label>
+            <input type="text" id="dietary-requirements" name="dietary-requirements">
 
             <label for="wiadomosc">Wiadomość</label>
             <textarea id="wiadomosc" name="wiadomosc" rows="4"></textarea>
