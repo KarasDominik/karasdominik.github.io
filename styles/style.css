@@ -178,6 +178,40 @@ img {
     height: auto;
 }
 
+.gallery-button {
+    margin-top: 10px;
+    width: 15%;
+    height: 30px;
+    background-color: #ecdea7; /* Zielone tło */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-button:hover {
+    background-color: #c7b989;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-button:active {
+    background-color: #ecdea7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+/* Stylizacja dla przycisku wyłączonego */
+.gallery-button:disabled {
+    background-color: #cccccc; /* Szary kolor sugerujący wyłączenie */
+    color: #666666; /* Przyciemniony tekst */
+    cursor: not-allowed; /* Zmieniony wskaźnik myszy na zakaz */
+    box-shadow: none; /* Brak cienia, aby przycisk wydawał się "płaski" */
+    transform: none; /* Bez efektów transformacji */
+}
+
 .playlist {
     width: 60%;
     height: 352px;
@@ -305,16 +339,6 @@ input[type="checkbox"] {
     width: 100%;
 }
 
-/*.select-container::after {*/
-/*    content: '▼';*/
-/*    font-size: 12px;*/
-/*    color: #333;*/
-/*    position: absolute;*/
-/*    right: 10px;*/
-/*    top: 20%;*/
-/*    pointer-events: none;*/
-/*}*/
-
 .bi-chevron-up {
     position: fixed;
     bottom: 20px;
@@ -423,6 +447,10 @@ footer {
     .description {
         font-size: 14px;
         width: 70%;
+    }
+
+    .gallery-button {
+        width: 40%;
     }
 
     .playlist {
