@@ -11,7 +11,7 @@ section {
 }
 
 .background-container {
-    background: url('../images/IMG_1125.jpg') no-repeat center center;
+    background: url('../images/background-image.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -210,6 +210,35 @@ img {
     cursor: not-allowed; /* Zmieniony wskaźnik myszy na zakaz */
     box-shadow: none; /* Brak cienia, aby przycisk wydawał się "płaski" */
     transform: none; /* Bez efektów transformacji */
+}
+
+.gallery {
+    width: 100%;
+    padding: 0;
+    margin: 40px 0 0 0; /* Dodaj to, aby usunąć marginesy */
+    border: none; /* Dodaj to, aby usunąć obramowania */
+    border-spacing: 0;
+    box-sizing: border-box;
+    border-collapse: collapse; /* Dodaj to, aby usunąć odstępy */
+    line-height: 0; /* Dodaj to, aby usunąć odstępy między wierszami */
+}
+
+.gallery td {
+    width: 25%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: table-cell; /* Zmień to, aby obrazy były wyświetlane w wierszach */
+}
+
+.gallery img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 .playlist {
@@ -451,6 +480,17 @@ footer {
 
     .gallery-button {
         width: 40%;
+    }
+
+    .gallery {
+    }
+
+    .gallery td {
+        width: 50%;
+    }
+
+    .gallery img {
+        width: 100%;
     }
 
     .playlist {
