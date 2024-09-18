@@ -215,30 +215,27 @@ img {
 .gallery {
     width: 100%;
     padding: 0;
-    margin: 40px 0 0 0; /* Dodaj to, aby usunąć marginesy */
-    border: none; /* Dodaj to, aby usunąć obramowania */
+    margin: 40px 0 0 0;
+    border: none;
     border-spacing: 0;
     box-sizing: border-box;
-    border-collapse: collapse; /* Dodaj to, aby usunąć odstępy */
-    line-height: 0; /* Dodaj to, aby usunąć odstępy między wierszami */
-}
-
-.gallery td {
-    width: 25%;
-    height: fit-content;
-    padding: 0;
-    margin: 0;
-    border: none;
-    display: table-cell; /* Zmień to, aby obrazy były wyświetlane w wierszach */
+    border-collapse: collapse;
+    line-height: 0;
+    display: flex; /* Use flexbox to align images in rows */
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    font-size: 0; /* Remove the gaps between inline elements */
 }
 
 .gallery img {
-    width: 100%;
+    width: 25%;
     height: 400px;
     object-fit: cover;
     padding: 0;
     margin: 0;
     border: none;
+    border-spacing: 0;
+    box-sizing: border-box;
+    font-size: initial; /* Reset font-size for images */
 }
 
 .playlist {
@@ -482,15 +479,9 @@ footer {
         width: 40%;
     }
 
-    .gallery {
-    }
-
-    .gallery td {
-        width: 50%;
-    }
-
     .gallery img {
-        width: 100%;
+        height: 250px;
+        width: 50%;
     }
 
     .playlist {
