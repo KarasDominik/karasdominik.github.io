@@ -36,7 +36,7 @@ section {
 
 /* Stylizacja dla linków w navbarze */
 .nav-links {
-    margin-right: 20%;
+    margin-right: 10%;
     list-style: none; /* Usunięcie punktów listy */
     padding: 0; /* Usunięcie paddingu */
     display: flex; /* Umożliwia rozmieszczanie elementów w poziomie */
@@ -58,6 +58,11 @@ section {
     font-size: 16px; /* Rozmiar czcionki */
     transition: color 0.3s; /* Płynna zmiana koloru po najechaniu */
     font-weight: bold;
+}
+
+.flag-icon {
+    height: 20px;
+    width: auto;
 }
 
 .nav-links a:hover {
@@ -471,9 +476,6 @@ footer {
         margin-right: 0;
         padding-top: 15px;
         padding-left: 15px;
-    }
-
-    .nav-links li.section {
         border-bottom: 2px black solid;
     }
 
@@ -482,6 +484,7 @@ footer {
         margin-left: auto;
         margin-right: 15px;
         height: 30px;
+        border: none;
     }
 
     .cross-sign {
