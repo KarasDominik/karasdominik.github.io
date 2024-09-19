@@ -490,13 +490,13 @@ footer {
     }
 
     .couple-image {
-        margin: 20px auto;
+        margin: 0 auto;
         width: 40%;
         padding: 5px;
     }
 
     .couple-introduction p {
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .description {
